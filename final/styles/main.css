@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Jersey 20";
+  src: url("../public/fonts/Jersey20-Regular.woff2") format("woff2"),
+    url("../public/fonts/Jersey20-Regular.woff") format("woff"),
+    url("../public/fonts/Jersey20-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jersey 20", sans-serif;
+
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  row-gap: 30px;
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 82px;
+}
+
+.counter {
+  color: aliceblue;
+  font-size: 128px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 2px solid aliceblue;
+  padding: 8px 12px;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.increment-btn {
+  background-color: rgb(27, 174, 8);
+}
+
+.decrement-btn {
+  background-color: rgb(226, 130, 13);
+}
+
+.reset-btn {
+  background-color: rgb(202, 49, 15);
+}
